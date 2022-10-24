@@ -1,0 +1,8 @@
+# File from https://github.com/kubeedge/kubeedge/tree/master/build/cloud
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kubeedge
+  labels:
+    k8s-app: kubeedge
