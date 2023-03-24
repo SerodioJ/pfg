@@ -52,8 +52,6 @@ spec:
           volumeMounts:
             - name: conf
               mountPath: /etc/kubeedge/config
-            - name: certs
-              mountPath: /etc/kubeedge/certs
             - name: sock
               mountPath: /var/lib/kubeedge
           securityContext:
@@ -65,9 +63,6 @@ spec:
         - name: conf
           configMap:
             name: cloudcore
-        - name: certs
-          secret:
-            secretName: cloudcore-stream-certs
         - name: sock
           hostPath:
             path: /var/lib/kubeedge

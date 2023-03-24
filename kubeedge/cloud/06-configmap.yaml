@@ -18,11 +18,8 @@ data:
     modules:
       cloudHub:
         advertiseAddress:
-          - <ADVERTISE_ADDRESS>
+          - 34.28.211.235
         nodeLimit: 10
-        tlsCAFile: /etc/kubeedge/ca/rootCA.crt
-        tlsCertFile: /etc/kubeedge/certs/edge.crt
-        tlsPrivateKeyFile: /etc/kubeedge/certs/edge.key
         unixsocket:
           address: unix:///var/lib/kubeedge/kubeedge.sock
           enable: true
@@ -30,4 +27,3 @@ data:
           address: 0.0.0.0
           enable: true
           port: 10000
-

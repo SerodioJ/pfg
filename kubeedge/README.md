@@ -17,6 +17,11 @@ Fill the ADVERTISE_ADDRESS in `cloud/06-configmap.yaml` with the external IP obt
 kubectl get services --namespace=kubeedge
 ```
 
+Setup cluster configs before deployment with the script
+```
+./cluster_config.sh
+```
+
 Finish resource creation with
 ```
 kubectl create -f cloud/06-configmap.yaml -f cloud/07-deployment.yaml
